@@ -1,0 +1,10 @@
+@import "fonts";
+@import "variables";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $open-sans;
+}
