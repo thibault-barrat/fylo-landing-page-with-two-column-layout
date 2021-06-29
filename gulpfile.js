@@ -76,7 +76,7 @@ function css() {
 
 // Watch files
 function watchFiles() {
-  gulp.watch("./src/sass/**/*", css);
+  gulp.watch("./src/sass/*", css);
   gulp.watch("./dist/**/*", browserSyncReload);
   gulp.watch("./src/img/**/*", images);
 }
