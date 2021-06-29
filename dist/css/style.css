@@ -81,6 +81,7 @@ body {
   flex-direction: column;
   padding: 100px 35px 0;
   width: 100%;
+  z-index: 1;
 }
 
 @media screen and (min-width: 768px) {
@@ -202,6 +203,12 @@ body {
   letter-spacing: 0.04em;
   border: none;
   border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.signin-form__button:hover {
+  cursor: pointer;
+  background-color: #7a9cfa;
 }
 
 @media screen and (min-width: 768px) {
@@ -329,6 +336,11 @@ body {
   border-bottom: #3c9f8f 2px solid;
   font-size: 13px;
   letter-spacing: 0.02em;
+  transition: all 0.3s ease;
+}
+
+.team__link:hover {
+  filter: brightness(140%);
 }
 
 @media screen and (min-width: 768px) {
@@ -503,6 +515,12 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.footer__social-icon:hover {
+  color: #585989;
+  border-color: #585989;
 }
 
 .footer__social-icon .fa-instagram {
@@ -542,4 +560,9 @@ body {
 .footer-menu__link {
   text-decoration: none;
   color: inherit;
+  transition: all 0.3s ease;
+}
+
+.footer-menu__link:hover {
+  color: #585989;
 }
