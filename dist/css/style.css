@@ -144,20 +144,43 @@ body {
 
 .signin-form {
   margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .signin-form {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 90%;
+  }
 }
 
 .signin-form--width-80 {
   width: 80%;
 }
 
-.signin-form__content--column {
-  display: flex;
+.signin-form--column {
   flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
-  .signin-form__content--column {
+  .signin-form--column {
     padding-left: 15%;
+  }
+}
+
+.signin-form__content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .signin-form__content {
+    width: 100%;
+    margin-right: 15px;
   }
 }
 
@@ -167,19 +190,11 @@ body {
   border-color: #070439;
   border-radius: 3px;
   padding: 13px 21px;
-  margin-bottom: 15px;
 }
 
 .signin-form__input::placeholder {
   color: #bfbfbf;
   font-size: 15px;
-}
-
-@media screen and (min-width: 768px) {
-  .signin-form__input {
-    width: 55%;
-    margin-right: 15px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -190,6 +205,14 @@ body {
 
 .signin-form__error {
   display: none;
+  font-weight: 200;
+  font-size: 14px;
+  padding-top: 5px;
+  color: red;
+}
+
+.signin-form__error--white {
+  color: white;
 }
 
 .signin-form__button {
@@ -198,7 +221,7 @@ body {
   color: #ffffff;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  padding: 11px 0;
+  padding: 12.5px 0;
   font-size: 15px;
   letter-spacing: 0.04em;
   border: none;
